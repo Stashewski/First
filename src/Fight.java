@@ -7,13 +7,13 @@ public class Fight {
     private static void fight(Ork ork, Elf elf) {
         while (true) {
             if (!ork.isOrkAlive && elf.isElfAlive) {
-                System.out.println("Ork is dead. Elf wint!");
+                System.out.println("Ork is dead. Elf win!");
                 break;
             } else if (ork.isOrkAlive && !elf.isElfAlive) {
                 System.out.println("Elf is dead. Ork win!");
                 break;
             } else if (!ork.isOrkAlive && !elf.isElfAlive) {
-                System.out.println("All is dead...");
+                System.out.println("Al is dead...");
                 break;
             }
             if (elf.health < 0) {
